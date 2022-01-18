@@ -155,7 +155,7 @@ class Collector():
                     print("Error: ", grabResult.ErrorCode, grabResult.ErrorDescription)
             else:
                     print('erpr')
-                    imgs[camera.GetDeviceInfo().GetSerialNumber()]=np.zeros([1200,1920],dtype=np.unit8)
+                    imgs[camera.GetDeviceInfo().GetSerialNumber()]=np.zeros([1200,1920],dtype=np.uinit8)
 
             grabResult.Release()
 
